@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#yellow {background-color: yellow;}
+#green {background-color: green;}
+#blue {background-color: blue;}
+#purple {background-color: purple;}
+
+/*  single images*/
+.picture {
+    position: absolute;
+    top: 0;
+    /*  will keep all the imgs on the right side of the screen */
+    left: 100%;
+    display: inline-block;
+    border: 1px solid grey;
+    height: 400px;
+    width: 100vw;
+    font-size: 20em;
+    font-family: sans-serif;
+    color: grey;
+    text-align: center;
+    transition-duration: 1s;
+    /* transform: translateX(); */
+}
+
+.onscreen {
+left: 0;
+}
+
+.offscreen {
+    left: -100%;
+    /* transition-delay: 1s; */
+}
+
+.to-the-right {
+    left: 100%;
+    z-index: -1;
+    opacity: 0.25;
+    transition-delay: 1.1s;
+}
+
+#dots {
+    /* position: absolute; */
+    /* margin: 0 auto;
+    top: 50%;
+    left: 50%; */
+    display: inline-block;
+    text-align: center;
+}
+
+.dot {
+    position: relative;
+    /* text-align: center; */
+    /* top: 50%; */
+    /* left: 50%; */
+    display: inline-block;
+    border: 2px grey solid;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 0.5vw;
+    /* z-index: 1; */
+}
+
+.current {
+    background-color: grey;
+}
+
+.dot-off {
+    background-color: inherit;
+}
